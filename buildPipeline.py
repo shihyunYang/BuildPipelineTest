@@ -26,11 +26,8 @@ def main():
         unity_path = '"C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Unity.exe" -quit -accept-apiupdate -nographics -batchmode -logFile "BuildAndroid.log" -buildTarget Android -projectPath F:/WorkSpace/buildPipelineTest -executeMethod BuildPlayer.BuildAndroid'
     else:
         unity_path = '/Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/MacOS/Unity" -quit -accept-apiupdate -nographics -batchmode -logFile "BuildAndroid.log" -buildTarget Android -projectPath F:/WorkSpace/buildPipelineTest -executeMethod BuildPlayer.BuildAndroid'
-
-    /Applications/Unity/Hub/Editor/2021.3.6f1
-
+        
     exit(run_command(unity_path))
-    
     
     
 if __name__ == "__main__":
