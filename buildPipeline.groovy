@@ -1,7 +1,7 @@
 node {
     env.UNITY_VERSION = '2021.3.6f1'        
     //python_path = "/opt/homebrew/bin/python3"
-	python_path = "/usr/local/opt/python3"
+	python_path = "/usr/local/bin/python3"
     
     echo "environment var"    
     sh "env"    
