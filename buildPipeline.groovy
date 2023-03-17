@@ -19,9 +19,9 @@ node {
                 sh "${python_path} -u builder.py"
             }
 
-            //stage("distribute") {
-                //sh "${python_path} -u distributer.py ${params.BUILD_NAME}"
-            //}
+            stage("distribute") {
+                sh "${python_path} -u distributer.py"
+            }
         }
         catch(Exception e) {            
             
