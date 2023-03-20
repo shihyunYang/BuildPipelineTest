@@ -9,7 +9,7 @@ def webpageCreate(strname):
     #if os.path.isfile('/Users/yangsihyeon/Sites/index.html')
     os.remove('/Users/yangsihyeon/Sites/index.html')
     
-    file = open('/Users/yangsihyeon/Sites/index.html')
+    file = open('/Users/yangsihyeon/Sites/index.html','w')
     
     webpage = """<html>
             <body>
