@@ -26,10 +26,10 @@ def webpageCreate(strname):
 
 def greet():
     x = dt.datetime.now()
-    test = '/Users/yangsihyeon/Sites/build/BuildPlayer{0}_{1}_{2}_{3}_{4}_{5}_[6].apk'.format(x.year, x.month, x.day, x.hour, x.minute, x.second)
+    test = '/Users/yangsihyeon/Sites/build/BuildPlayer{0}_{1}_{2}_{3}_{4}_{5}.apk'.format(x.year, x.month, x.day, x.hour, x.minute, x.second)
     shutil.copy2('/Users/yangsihyeon/Desktop/BuildPipelineTest/Builds/BuildPlayer.apk', test)
     
-    filename = 'BuildPlayer{0}_{1}_{2}_{3}_{4}_{5}_[6].apk'.format(x.year, x.month, x.day, x.hour, x.minute, x.second)
+    filename = 'BuildPlayer{0}_{1}_{2}_{3}_{4}_{5}.apk'.format(x.year, x.month, x.day, x.hour, x.minute, x.second)
     webpageCreate(filename)
     
 
