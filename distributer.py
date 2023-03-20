@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 import shutil
-import datetime
+import datetime as dt
 import os
 
 
 
 def webpageCreate(strname):
-    if os.path.isfile('/Users/yangsihyeon/Sites/index.html')
+    #if os.path.isfile('/Users/yangsihyeon/Sites/index.html')
     os.remove('/Users/yangsihyeon/Sites/index.html')
     
     file = open('/Users/yangsihyeon/Sites/index.html')
