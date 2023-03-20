@@ -18,7 +18,7 @@ def webpageCreate(strname):
             </body>
         </html>
         """
-    webpage.format(x.year, x.month, x.day, x.hour, x.minute, x.second)
+    webpage.format(strname)
     
     
     file.write(webpage)
