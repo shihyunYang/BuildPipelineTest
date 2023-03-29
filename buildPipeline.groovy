@@ -8,10 +8,13 @@ node {
     
     stage("checkout") {
         checkout scm
-        //git url: 'https://github.com/shihyunYang/BuildPipelineTest.git', branch: 'main'
+        //git url: 'https://hongjeongtae@bitbucket.org/projectball/client.git', branch: 'develop'
     }
 
-    if(params.BUILD_COMMAND == "build") {
+	echo "build-test"    
+    if(params.BUILD_COMMAND == "build") 
+	{
+		echo "build-test2"    
         build_title = "${params.BUILD_NAME}, ${params.BUILD_VERSION}(${params.BUILD_NUMBER})"
         try {
             
@@ -24,15 +27,13 @@ node {
             }
         }
         catch(Exception e) {            
-            
+            sendMessage("[빌드 실패] - ${build_title}", '#ff0000')
+			echo "build-test3"   
         }
     }
+	echo "build-test1"   
 }
 
 def sendMessage(String message, String color='#00ff00') {
     echo "${message}"
-
-    if(params.NOTIFY_SLACK == true) {
-        slackSend(channel: params.SLACK_CHANNEL_ID, color: color, message: message)
-    }
 }
